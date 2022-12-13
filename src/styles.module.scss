@@ -1,11 +1,13 @@
 .background {
   height: 100vh;
-  background-image: url('./assets/img/background.png');
-  background-position: center;
-  background-size: cover;
   color: #ffffff;
   font-size: 1.041vw;
+  position: absolute;
+  background: transparent;
+  left: 0;
+  right: 0;
   .container {
+    z-index: 2;
     height: calc(100vh - 62px);
     display: flex;
     flex-direction: column;

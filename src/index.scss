@@ -15,7 +15,13 @@ body {
   color: #000000;
   overflow-x: hidden;
 }
-
+.content {
+  height: 100vh;
+  justify-content: center;
+}
+canvas {
+  height: 100vh !important;
+}
 @media (max-width: 480px) {
   body {
     font-size: 3.2vw;
