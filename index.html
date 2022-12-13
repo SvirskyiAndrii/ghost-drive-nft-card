@@ -1,0 +1,17 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"/><link rel="icon" href="/ghost-drive-nft-card/favicon.png"/><meta name="viewport" content="width=device-width,initial-scale=1"/><meta name="theme-color" content="#000000"/><meta name="description" content="Smart storage solution"/><link rel="apple-touch-icon" href="/ghost-drive-nft-card/logo192.png"/><link rel="manifest" href="/ghost-drive-nft-card/manifest.json"/><title>Ghost Drive</title><script defer="defer" src="/ghost-drive-nft-card/static/js/main.7642aaec.js"></script><link href="/ghost-drive-nft-card/static/css/main.17734ef0.css" rel="stylesheet"></head><body><noscript>You need to enable JavaScript to run this app.</noscript><div id="root"></div><script type="x-shader/x-vertex" id="vertexshader">attribute float size;
+			attribute vec3 color;
+			attribute float fade;
+
+			varying vec3 vColor;
+
+			void main() {
+				vColor = color;
+				vec4 mvPosition = modelViewMatrix * vec4(position, 1.0);
+				gl_PointSize = size;
+				gl_Position = projectionMatrix * mvPosition;
+			}</script><script type="x-shader/x-fragment" id="fragmentshader">uniform sampler2D pointTexture;
+			varying vec3 vColor;
+			void main() {
+				gl_FragColor = vec4(vColor, 1.0);
+				gl_FragColor = gl_FragColor * texture2D(pointTexture, gl_PointCoord);
+			}</script></body></html>
