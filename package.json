@@ -1,4 +1,5 @@
 {
+  "homepage": "http://SvirskyiAndrii.github.io/ghost-drive-nft-card",
   "name": "ghost-drive",
   "version": "0.1.0",
   "private": true,
@@ -18,6 +19,7 @@
     "web-vitals": "^2.1.4"
   },
   "devDependencies": {
+    "gh-pages": "^3.2.3",
     "sass": "^1.53.0"
   },
   "scripts": {
