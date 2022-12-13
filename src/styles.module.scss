@@ -1,0 +1,177 @@
+.background {
+  height: 100vh;
+  background-image: url('./assets/img/background.png');
+  background-position: center;
+  background-size: cover;
+  color: #ffffff;
+  font-size: 1.041vw;
+  .container {
+    height: calc(100vh - 62px);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 36px 30px 26px 30px;
+    .top {
+      display: flex;
+      justify-content: space-between;
+      .company {
+        line-height: 16px;
+        span {
+          font-weight: 500;
+        }
+      }
+      .nft_pass {
+        padding: 2px 0 0 0;
+        .key {
+          margin: 0 0 10px 0;
+          line-height: 16px;
+          span {
+            font-weight: 500;
+          }
+        }
+        .value {
+          font-size: 0.55vw;
+          line-height: 16px;
+          color: rgba(255, 255, 255, 0.66);
+        }
+      }
+    }
+  }
+  .middle {
+    display: flex;
+    justify-content: space-between;
+    .boarding {
+      display: flex;
+      gap: 0.9vw;
+      .keys {
+        & div:nth-child(2) {
+          font-size: 0.55vw;
+          line-height: 16px;
+          color: rgba(255, 255, 255, 0.66);
+          margin: 10px 0 0 0;
+        }
+      }
+      .values {
+        & div:nth-child(2) {
+          font-size: 0.34vw;
+          line-height: 12px;
+          letter-spacing: 0.04em;
+          margin: 13px 0 0 0;
+        }
+      }
+    }
+    .features {
+      & div:nth-child(2) {
+        font-size: 0.55vw;
+        line-height: 16px;
+        color: rgba(255, 255, 255, 0.66);
+        margin: 10px 0 0 0;
+      }
+    }
+  }
+  .bottom {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    .statistics_left,
+    .statistics_right {
+      display: flex;
+      gap: 10px;
+      font-size: 0.55vw;
+      line-height: 12px;
+      font-weight: 500;
+      .keys,
+      .progress,
+      .values {
+        & div:not(:last-child) {
+          margin: 0 0 10px 0;
+        }
+      }
+    }
+    .statistics_left {
+      .keys {
+        text-align: right;
+      }
+      .progress {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        margin: 0 0 0 10px;
+        & div {
+          height: 5px;
+          background-color: #ffffff;
+          border: 1px solid #ffffff;
+        }
+        & div:nth-child(1),
+        & div:nth-child(3) {
+          width: 1.18vw;
+        }
+        & div:nth-child(2) {
+          width: 3.05vw;
+        }
+      }
+    }
+    .statistics_right {
+      .values {
+        text-align: right;
+      }
+      .progress {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: flex-end;
+        margin: 0 10px 0 0;
+        & div {
+          height: 5px;
+          background-color: #ffffff;
+          border: 1px solid #ffffff;
+        }
+        & div:nth-child(1) {
+          width: 1.875vw;
+        }
+        & div:nth-child(2) {
+          width: 2.77vw;
+        }
+        & div:nth-child(3) {
+          width: 3.95vw;
+        }
+      }
+    }
+    .metamask_login {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      line-height: 12px;
+      font-weight: 500;
+      .date {
+        margin: 0 0 10px 0;
+        font-size: 0.34vw;
+      }
+      .login {
+        margin: 0 0 15px 0;
+        font-size: 0.55vw;
+      }
+      .line {
+        width: 1px;
+        height: 45.86px;
+        margin: 0 0 25px 0;
+        background-image: url('./assets/img/logo-line.svg');
+        background-repeat: no-repeat;
+        background-position: center;
+      }
+      .metamask {
+        margin: 0 0 37px 0;
+        font-weight: 600;
+        line-height: 17px;
+      }
+      .logo {
+        width: 13px;
+        height: 12px;
+        background-image: url('./assets/img/logo.svg');
+        background-repeat: no-repeat;
+        background-position: center;
+      }
+    }
+  }
+}
