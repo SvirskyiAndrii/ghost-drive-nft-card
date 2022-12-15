@@ -12,7 +12,6 @@ import { UnrealBloomPass } from 'three/examples/jsm/postprocessing/UnrealBloomPa
 import { EffectComposer } from 'three/examples/jsm/postprocessing/EffectComposer.js';
 
 function App() {
-  
   useEffect(() => {
     const elContent = document.querySelector('.content');
     const pixelRatio = 2;
@@ -175,6 +174,7 @@ function App() {
         }
       }
     }
+
     class Star {
       setup(color) {
         this.r = Math.random() * 12 + 3;
@@ -285,10 +285,8 @@ function App() {
       renderer.setSize(elContent.offsetWidth, elContent.offsetHeight);
       bloomPass.setSize(elContent.offsetWidth, elContent.offsetHeight);
     }
-
     onWindowResize();
     window.addEventListener('resize', onWindowResize);
-
     return () => {
       window.removeEventListener('resize', onWindowResize);
     };
