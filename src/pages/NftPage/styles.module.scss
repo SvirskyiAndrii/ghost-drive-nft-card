@@ -1,0 +1,599 @@
+.background {
+  color: #ffffff;
+  height: calc(100vh - 50px);
+  padding: 50px 3.90625vw 0 03.90625vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  position: absolute;
+  left: 0;
+  right: 0;
+  overflow: hidden;
+  background-image: url(../../assets/img/gradient-bottom.svg),
+    url(../../assets/img/gradient-top.svg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 50% 5%;
+  .top {
+    display: flex;
+    justify-content: space-between;
+    margin: 0 0 27px 0;
+    .ghostdrive {
+      display: flex;
+      font-family: 'IBM Plex Mono';
+      font-size: 1.171875vw;
+      line-height: 16px;
+      .logo {
+        width: 13px;
+        height: 14px;
+        margin: 0 0.625vw 0 0;
+        background-image: url('../../assets/img/nft_logo.svg');
+        background-repeat: no-repeat;
+        background-size: cover;
+      }
+      span {
+        font-weight: 500;
+      }
+    }
+    .close {
+      cursor: pointer;
+      user-select: none;
+      width: 24px;
+      height: 24px;
+      background-image: url('../../assets/img/close.svg');
+      background-repeat: no-repeat;
+      background-size: cover;
+    }
+  }
+  .nft_content {
+    display: flex;
+    .card_container {
+      min-width: 461.77px;
+      width: 461.77px;
+      position: relative;
+      margin: 0 3.28125vw 0 0;
+      &::before {
+        content: '';
+        position: absolute;
+        width: 14.07px;
+        height: 14.07px;
+        background-image: url(../../assets/img/angle.svg);
+        background-size: contain;
+        background-repeat: no-repeat;
+        top: 0;
+        left: 0;
+        z-index: 1;
+      }
+      &::after {
+        content: '';
+        position: absolute;
+        width: 14.07px;
+        height: 14.07px;
+        background-image: url(../../assets/img/angle_simple.svg);
+        background-size: contain;
+        background-repeat: no-repeat;
+        top: 0;
+        right: 0;
+        z-index: 1;
+        transform: rotate(180deg);
+      }
+      .card {
+        min-width: 461.77px;
+        width: 461.77px;
+        height: 686.57px;
+        background: rgba(255, 255, 255, 0.03);
+        backdrop-filter: blur(1.5px);
+        border-radius: 10px 0 0 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        &::before {
+          content: '';
+          position: absolute;
+          width: 14.07px;
+          height: 14.07px;
+          background-image: url(../../assets/img/angle_simple.svg);
+          background-size: contain;
+          background-repeat: no-repeat;
+          bottom: 0;
+          left: 0;
+          z-index: 1;
+        }
+        &::after {
+          content: '';
+          position: absolute;
+          width: 8.8px;
+          height: 8.8px;
+          background-image: url('../../assets/img/triangle.svg');
+          background-size: contain;
+          background-repeat: no-repeat;
+          bottom: 0;
+          right: 0;
+          z-index: 1;
+        }
+        .inner_card {
+          width: 398px;
+          height: 618px;
+          background: linear-gradient(
+              180deg,
+              rgba(107, 25, 128, 0.65) 0%,
+              rgba(4, 20, 44, 0.86) 100%
+            ),
+            url('../../assets/img/wave.svg');
+          background-position: bottom left;
+          background-repeat: no-repeat;
+          backdrop-filter: blur(2px);
+          border-radius: 40px;
+        }
+      }
+
+      .image_wrapper {
+        position: absolute;
+        top: 33px;
+        left: 50%;
+        transform: translate(-50%, 0);
+        width: 371px;
+        height: 371px;
+        margin: 14px auto 0;
+        .img {
+          border-radius: 24px;
+          width: 371px;
+          height: 371px;
+          position: absolute;
+        }
+        .img_border {
+          width: 322.32px;
+          height: 322.32px;
+          border: 1px solid white;
+          border-radius: 24px;
+          // background-image: url('../../assets/img/img_border.svg'); // TODO: ask for this bg
+          // background-size: contain;
+          // background-repeat: no-repeat;
+          position: absolute;
+          top: 50%;
+          left: 50%;
+          transform: translate(-50%, -50%);
+        }
+        .img_logo {
+          width: 14.5px;
+          height: 14.5px;
+          background-image: url('../../assets/img/img_logo.svg');
+          background-size: contain;
+          background-repeat: no-repeat;
+          position: absolute;
+          top: 45px;
+          right: 41px;
+        }
+        .img_close {
+          width: 12.89px;
+          height: 12.89px;
+          background-image: url('../../assets/img/img_close.svg');
+          background-size: contain;
+          background-repeat: no-repeat;
+          position: absolute;
+          top: 50%;
+          right: 41px;
+          transform: translate(-50%, 0%);
+        }
+        .img_name {
+          font-family: 'IBM Plex Mono';
+          font-size: 4.83484px;
+          line-height: 10px;
+          position: absolute;
+          top: 50%;
+          left: 41px;
+          transform: translate(-50%, 0%) rotate(-90deg);
+        }
+      }
+      .content_wrapper {
+        .top {
+          width: 363.12px;
+          position: absolute;
+          bottom: 90px;
+          left: 50%;
+          transform: translate(-50%, 0);
+          &::before {
+            content: '';
+            position: absolute;
+            width: 7.04px;
+            height: 7.04px;
+            background-image: url(../../assets/img/angle.svg);
+            background-size: contain;
+            background-repeat: no-repeat;
+            top: 0;
+            left: 0;
+            z-index: 1;
+          }
+          &::after {
+            content: '';
+            position: absolute;
+            width: 7.04px;
+            height: 7.04px;
+            background-image: url(../../assets/img/angle_simple.svg);
+            background-size: contain;
+            background-repeat: no-repeat;
+            top: 0;
+            right: 0;
+            z-index: 1;
+            transform: rotate(180deg);
+          }
+          .content_card {
+            min-width: 363.12px;
+            width: 363.12px;
+            height: 136.37px;
+            background: rgba(255, 255, 255, 0.03);
+            // opacity: 0.1;
+            backdrop-filter: blur(2.63868px);
+            border-radius: 10px 0 0 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            &::before {
+              content: '';
+              position: absolute;
+              width: 7.04px;
+              height: 7.04px;
+              background-image: url(../../assets/img/angle_simple.svg);
+              background-size: contain;
+              background-repeat: no-repeat;
+              bottom: 0;
+              left: 0;
+              z-index: 1;
+            }
+            &::after {
+              content: '';
+              position: absolute;
+              width: 4.4px;
+              height: 4.4px;
+              background-image: url('../../assets/img/triangle.svg');
+              background-size: contain;
+              background-repeat: no-repeat;
+              bottom: 0;
+              right: 0;
+              z-index: 1;
+            }
+          }
+          .text {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            position: absolute;
+            top: 0;
+            left: 50%;
+            transform: translate(-50%, 0);
+            .title {
+              width: 333px;
+              height: 84px;
+              background-image: url('../../assets/img/BLUEPASS.svg');
+              background-position: center;
+              background-repeat: no-repeat;
+              background-size: contain;
+            }
+            .subtitle {
+              font-family: 'Space Mono';
+              font-size: 29.0255px;
+              letter-spacing: 0.6em;
+              margin: 0 -13px 10px 0;
+            }
+            .items {
+              width: 100%;
+              display: flex;
+              justify-content: space-between;
+              font-family: 'Space Grotesk';
+              font-weight: 500;
+              font-size: 8.7956px;
+              line-height: 11px;
+              letter-spacing: 0.07em;
+              opacity: 0.7;
+              & div:not(:last-of-type) {
+                position: relative;
+                &::after {
+                  content: '';
+                  position: absolute;
+                  width: 1px;
+                  height: 5.92px;
+                  background-color: #ffffff;
+                  opacity: 0.7;
+                  right: -9px;
+                  top: 50%;
+                  transform: translate(0, -50%);
+                }
+              }
+            }
+          }
+        }
+        .bottom {
+          min-width: 363.12px;
+          width: 363.12px;
+          position: absolute;
+          bottom: 50px;
+          left: 50%;
+          transform: translate(-50%, 0);
+          & .row {
+            display: flex;
+            justify-content: space-between;
+            &:nth-of-type(1) {
+              margin: 0 0 3px 0;
+              font-family: 'Space Grotesk';
+              font-weight: 500;
+              font-size: 19.2016px;
+              line-height: 25px;
+              text-align: right;
+            }
+            &:nth-of-type(2) {
+              font-family: 'Space Grotesk';
+              font-weight: 300;
+              font-size: 11.2813px;
+              line-height: 14px;
+              text-align: right;
+            }
+          }
+        }
+      }
+    }
+    .description_container {
+      padding: 10px 0 0 0;
+      & > .title {
+        margin: 0 0 28px 0;
+        font-family: 'IBM Plex Mono';
+        font-style: normal;
+        font-weight: 600;
+        font-size: 1.40625vw;
+        line-height: 130%;
+        letter-spacing: 0.05em;
+        span {
+          font-size: 2.1875vw;
+        }
+      }
+      .description_wrapper {
+        display: flex;
+        gap: 4.453125vw;
+        margin: 0 0 56px 0;
+        .description {
+          & > div {
+            font-family: 'Space Grotesk';
+            font-weight: 500;
+            font-size: 1.25vw;
+            line-height: 120%;
+            padding: 0 0 0 22px;
+            position: relative;
+            &::before {
+              content: '';
+              position: absolute;
+              left: 0;
+              bottom: 6px;
+              width: 9.03px;
+              height: 9.03px;
+              background-image: url('../../assets/img/triangle.svg');
+              background-position: center;
+              background-repeat: no-repeat;
+            }
+            &:not(:last-child) {
+              margin: 0 0 16px 0;
+            }
+            &:not(:first-child) {
+              display: flex;
+              justify-content: space-between;
+              width: 11.09375vw;
+            }
+            & .value {
+              &.title {
+                font-size: 1.5625vw;
+                line-height: 26px;
+                &::after {
+                  content: '';
+                  position: absolute;
+                  right: -18px;
+                  bottom: 7px;
+                  width: 12px;
+                  height: 12px;
+                  background-image: url('../../assets/img/triangle.svg');
+                  background-position: center;
+                  background-repeat: no-repeat;
+                  background-size: cover;
+                  transform: rotate(-45deg);
+                }
+              }
+            }
+            & .key {
+              width: 55%;
+              span {
+                font-weight: 300;
+              }
+            }
+          }
+        }
+        .statistics {
+          font-family: 'Space Mono';
+          font-size: 0.68360625vw;
+          line-height: 150%;
+          text-transform: uppercase;
+          padding: 0 0 0 0.546875vw;
+          & > div {
+            & .label {
+              margin: 0 0 5px 0;
+            }
+            & .progress {
+              height: 6px;
+              background: rgba(255, 255, 255, 0.33);
+              margin: 0 0 11px 0;
+              position: relative;
+              &.first {
+                width: 9.53125vw;
+                &::before {
+                  content: '';
+                  position: absolute;
+                  top: 0;
+                  left: 0;
+                  width: 2.265625vw;
+                  height: 6px;
+                  background-color: #ffffff;
+                }
+              }
+              &.second {
+                width: 12.109375vw;
+                &::before {
+                  content: '';
+                  position: absolute;
+                  top: 0;
+                  left: 0;
+                  width: 3.125vw;
+                  height: 6px;
+                  background-color: #ffffff;
+                }
+              }
+              &.third {
+                width: 14.296875vw;
+                &::before {
+                  content: '';
+                  position: absolute;
+                  top: 0;
+                  left: 0;
+                  width: 4.453125vw;
+                  height: 6px;
+                  background-color: #ffffff;
+                }
+              }
+              &.fourth {
+                width: 17.109375vw;
+                &::before {
+                  content: '';
+                  position: absolute;
+                  top: 0;
+                  left: 0;
+                  width: 1.5625vw;
+                  height: 6px;
+                  background-color: #ffffff;
+                }
+              }
+            }
+          }
+        }
+        .blue_member {
+          font-family: 'Space Grotesk';
+          font-weight: 500;
+          & .title {
+            font-size: 1.71875vw;
+            line-height: 28px;
+            margin: 0 0 30px 0;
+          }
+          & .item {
+            font-size: 1.171875vw;
+            line-height: 120%;
+          }
+        }
+      }
+      .button_wrapper {
+        cursor: pointer;
+        user-select: none;
+        width: 222px;
+        height: 27px;
+        position: relative;
+        margin: 60px 0 14px auto;
+        &::before {
+          content: '';
+          position: absolute;
+          width: 10px;
+          height: 10px;
+          background-image: url('../../assets/img/angle.svg');
+          background-size: cover;
+          background-repeat: no-repeat;
+          left: -6.5px;
+          top: -6.5px;
+        }
+        &::after {
+          content: '';
+          position: absolute;
+          width: 10px;
+          height: 10px;
+          background-image: url('../../assets/img/angle_simple.svg');
+          background-size: cover;
+          background-repeat: no-repeat;
+          right: -6px;
+          top: -6px;
+          transform: rotate(180deg);
+        }
+        .cool_button {
+          width: 222px;
+          height: 27px;
+          position: relative;
+          &::before {
+            content: '';
+            position: absolute;
+            width: 10px;
+            height: 10px;
+            background-image: url('../../assets/img/angle_simple.svg');
+            background-size: cover;
+            background-repeat: no-repeat;
+            left: -6px;
+            bottom: -6px;
+          }
+          &::after {
+            content: '';
+            position: absolute;
+            width: 10px;
+            height: 10px;
+            background-image: url('../../assets/img/angle_simple.svg');
+            background-size: cover;
+            background-repeat: no-repeat;
+            right: -6px;
+            bottom: -6px;
+            transform: rotate(-90deg);
+          }
+          .button {
+            position: relative;
+            border: none;
+            background: none;
+            outline: none;
+            color: black;
+            mix-blend-mode: screen;
+            text-align: center;
+            font-weight: 700;
+            font-size: 12px;
+            line-height: 27px;
+          }
+
+          .button::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            right: 0;
+            bottom: 0;
+            left: 0;
+            background: white;
+            width: 222px;
+            height: 27px;
+            mix-blend-mode: color-burn;
+          }
+        }
+      }
+      .under_button {
+        font-family: 'Space Grotesk';
+        font-weight: 500;
+        font-size: 0.625vw;
+        line-height: 10px;
+        text-transform: uppercase;
+        text-align: right;
+      }
+    }
+  }
+  .next_pass {
+    padding: 0 0 48px 0;
+    font-family: 'IBM Plex Mono';
+    text-align: right;
+    & div:nth-child(1) {
+      font-size: 0.625vw;
+      line-height: 150%;
+      color: rgba(255, 255, 255, 0.66);
+      margin: 0 0 4px 0;
+    }
+    & div:nth-child(2) {
+      cursor: pointer;
+      user-select: none;
+      font-size: 1.25vw;
+      line-height: 16px;
+      color: #ffffff;
+    }
+  }
+}
