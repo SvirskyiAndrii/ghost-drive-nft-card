@@ -15,7 +15,7 @@ export const MainPage = () => {
             <div
               className={styles.key}
               onClick={() => {
-                navigate('/nft');
+                navigate('/ghost-drive-nft-card/nft');
               }}
             >
               NFT<span>PASS</span>

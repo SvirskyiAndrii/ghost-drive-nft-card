@@ -294,8 +294,8 @@ function App() {
   return (
     <Router>
       <Routes>
-        <Route path='/' element={<MainPage />} />
-        <Route path='/nft' element={<NftPage />} />
+        <Route path='/ghost-drive-nft-card' element={<MainPage />} />
+        <Route path='/ghost-drive-nft-card/nft' element={<NftPage />} />
       </Routes>
       <div className='content'></div>
     </Router>
