@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/ghost-drive-nft-card/static/css/main.8b4b8d00.css",
-    "main.js": "/ghost-drive-nft-card/static/js/main.0085d1f1.js",
+    "main.css": "/ghost-drive-nft-card/static/css/main.9615d864.css",
+    "main.js": "/ghost-drive-nft-card/static/js/main.354724b6.js",
     "static/media/SpaceGrotesk-Medium.svg": "/ghost-drive-nft-card/static/media/SpaceGrotesk-Medium.cac2fd1907666ae64097.svg",
     "static/media/SpaceGrotesk-Regular.svg": "/ghost-drive-nft-card/static/media/SpaceGrotesk-Regular.dfe96d06cd22d758ce59.svg",
     "static/media/SpaceGrotesk-Light.svg": "/ghost-drive-nft-card/static/media/SpaceGrotesk-Light.84696f86300cdc4904f4.svg",
@@ -57,11 +57,11 @@
     "static/media/triangle.svg": "/ghost-drive-nft-card/static/media/triangle.bed1d67b63d0bbccd022.svg",
     "static/media/angle_simple.svg": "/ghost-drive-nft-card/static/media/angle_simple.22d8dc80539cba65da40.svg",
     "static/media/angle.svg": "/ghost-drive-nft-card/static/media/angle.1cb946d2772db08080ba.svg",
-    "main.8b4b8d00.css.map": "/ghost-drive-nft-card/static/css/main.8b4b8d00.css.map",
-    "main.0085d1f1.js.map": "/ghost-drive-nft-card/static/js/main.0085d1f1.js.map"
+    "main.9615d864.css.map": "/ghost-drive-nft-card/static/css/main.9615d864.css.map",
+    "main.354724b6.js.map": "/ghost-drive-nft-card/static/js/main.354724b6.js.map"
   },
   "entrypoints": [
-    "static/css/main.8b4b8d00.css",
-    "static/js/main.0085d1f1.js"
+    "static/css/main.9615d864.css",
+    "static/js/main.354724b6.js"
   ]
 }
