@@ -297,7 +297,7 @@ function App() {
         <Route path='/ghost-drive-nft-card' element={<MainPage />} />
         <Route path='/ghost-drive-nft-card/nft' element={<NftPage />} />
       </Routes>
-      <div className='content'></div>
+      <div id='whale' className='content'></div>
     </Router>
   );
 }

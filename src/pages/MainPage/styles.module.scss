@@ -25,6 +25,8 @@
       .nft_pass {
         padding: 2px 0 0 0;
         .key {
+          cursor: pointer;
+          user-select: none;
           margin: 0 0 10px 0;
           line-height: 16px;
           span {

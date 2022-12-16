@@ -596,4 +596,49 @@
       color: #ffffff;
     }
   }
+  .content_mobile {
+    display: none;
+  }
+}
+
+@media (max-width: 1020px) {
+  .background {
+    height: auto;
+    padding: 50px 18px 0 18px;
+    .top {
+      .ghostdrive {
+        font-size: 15px;
+      }
+      .close {
+        width: 17px;
+        height: 17px;
+      }
+    }
+    .nft_content {
+      flex-direction: column;
+      align-items: center;
+      .card_container {
+        transform: scale(0.75);
+        margin: 0;
+      }
+    }
+    .description_container {
+      width: 100%;
+      & > .title {
+        display: none;
+      }
+      .description_wrapper {
+        display: flex;
+        gap: 0;
+        justify-content: space-evenly;
+      }
+      .button_wrapper,
+      .under_button {
+        display: none;
+      }
+    }
+  }
+  .next_pass {
+    display: none;
+  }
 }

@@ -1,9 +1,18 @@
 import { useNavigate } from 'react-router-dom';
 import styles from './styles.module.scss';
 import whale from '../../assets/img/whale.png';
+import { useEffect } from 'react';
 
 export const NftPage = () => {
   const navigate = useNavigate();
+
+  useEffect(() => {
+    const whale = document.getElementById('whale');
+    whale?.style.setProperty('display', 'none');
+    return () => {
+      whale?.style.setProperty('display', 'block');
+    };
+  }, []);
 
   return (
     <div className={styles.background}>
@@ -30,11 +39,11 @@ export const NftPage = () => {
             <div className={styles.img_close} />
             <div className={styles.img_name}>BABY WHALE</div>
           </div>
-          <div className={styles.content_wrapper}>
+          {/* <div className={styles.content_wrapper}>
             <div className={styles.top}>
               <div className={styles.content_card} />
               <div className={styles.text}>
-                <div className={styles.title}>{/* BLUEPASS */}</div>
+                <div className={styles.title}></div>
                 <div className={styles.subtitle}>GHOSTDRIVE</div>
                 <div className={styles.items}>
                   <div>NFT PASS</div>
@@ -54,14 +63,14 @@ export const NftPage = () => {
                 <div>SUPPLY 1,222</div>
               </div>
             </div>
-          </div>
+          </div> */}
         </div>
         <div className={styles.description_container}>
           <div className={styles.title}>
             <span>WEB3+ </span> EXPERIENCE
           </div>
           <div className={styles.description_wrapper}>
-            <div className={styles.description}>
+            {/* <div className={styles.description}>
               <div>
                 <div className={`${styles.value} ${styles.title}`}>
                   BABY WHALE
@@ -83,7 +92,7 @@ export const NftPage = () => {
                   160<span>%</span>
                 </div>
               </div>
-            </div>
+            </div> */}
             <div className={styles.statistics}>
               <div>
                 <div className={styles.label}>20GB GHOSTDRIVE</div>
@@ -116,6 +125,17 @@ export const NftPage = () => {
             </div>
           </div>
           <div className={styles.under_button}>{'// TOTAL 1,222/343'}</div>
+        </div>
+      </div>
+      <div className={styles.content_mobile}>
+        <div className={styles.button_wrapper}>
+          <div className={styles.cool_button}>
+            <div className={styles.button}>MINT NOW</div>
+          </div>
+        </div>
+        <div className={styles.next_pass}>
+          <div>BLUE GUARD \</div>
+          <div>NEXT PASS</div>
         </div>
       </div>
       <div className={styles.next_pass}>
